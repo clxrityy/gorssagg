@@ -58,10 +58,13 @@ func main() {
 - `/v1/error` - error route (responds with `400`)
 - `/v1/users` - users route
     - **POST** - creates a user, takes a `name` parameter
-        - responds with JSON object that should contain the user's `api_key`
+        - responds with a JSON object that should contain the user's `api_key`
     - **GET** - get a user by their API key
-        - pass in `Authorization: ApiKey <api_key>` as a header
+        - pass in the `Authorization: ApiKey <api_key>` header
 - `/v1/feeds` - RSS feeds route
-    - **POST** - creates a feed, takes a `name` & `url` parameter (the url should point to some sort of `/index.xml`)
-        - pass in `Authorization: ApiKey <api_key>` as a header
-    - **GET** - returns array of feeds (no parameters)
+    - **POST** - creates a feed, takes a `name` & `url` parameter (the URL should point to some sort of `/index.xml`)
+        - pass in the `Authorization: ApiKey <api_key>` header
+    - **GET** - returns an array of feeds (no parameters)
+- `/v1/feed_follows` - follow a feed
+    - **POST** - follows a feed, takes a `feed_id` parameter
+        - pass in the `Authorization: ApiKey <api_key>` header
