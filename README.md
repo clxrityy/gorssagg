@@ -1,4 +1,4 @@
-# go-rss-agg
+# gorssagg
 
 Go RSS feed aggregator authenticated with API keys
 
