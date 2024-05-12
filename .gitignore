@@ -1,6 +1,5 @@
-vendor/**/*
 test/**/*
 .DS_Store
-gorssagg
 .env
 .vscode/**
+gorssagg
