@@ -64,5 +64,4 @@ func main() {
 - `/v1/feeds` - RSS feeds route
     - **POST** - creates a feed, takes a `name` & `url` parameter (the url should point to some sort of `/index.xml`)
         - pass in `Authorization: ApiKey <api_key>` as a header
-
-#### . . . to be continued
+    - **GET** - returns array of feeds (no parameters)
